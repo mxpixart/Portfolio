@@ -1,0 +1,203 @@
+@import url(./fonts.css);
+@import url(./partials/variables.css);
+
+/* General Styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+/* Utility Styling*/
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-primary {
+    font-family: var(--roboto);
+    color: var(--primary-color);
+}
+
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: whitesmoke;
+    padding: 1.5rem 3rem;
+    position: sticky;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar h2 a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#navbar li a:hover{
+    background-color: var(--primary-color);
+}
+
+/* Showcase Area */
+#showcase{
+    background: url(../img/flight-landscape-nature-sky-36717.jpg) no-repeat center center/cover;
+    height: 91.7vh;
+}
+
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+}
+
+.showcase-content h1{
+    font-size: 4rem;
+    margin-bottom: 1.6rem;
+}
+
+.showcase-content hr{
+    width: 65%;
+    margin: 12px auto;
+    border-color: rgba(150, 150, 150, 0.1);
+}
+
+.showcase-content ul{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
+.showcase-content li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.showcase-content li#instagram a:hover{
+    color: #e1306c;
+}
+
+.showcase-content li#twitter a:hover{
+    color:  #11ABB0;
+}
+
+.showcase-content li#facebook a:hover{
+    color:  #4267B2;
+}
+
+/* Styling About */
+#about{
+    padding: 5rem 0;
+}
+
+#about h2, #services h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#about h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p.lead{
+    margin-bottom: 1rem;
+}
+
+#about .about-content{
+    display: flex;
+}
+
+#about .about-text,
+#about .about-image{
+    flex: 1;
+}
+
+#about .about-text{
+    text-align: justify;
+}
+
+#about .about-image img{
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    border-radius: 30%;
+    margin-top: 15px;
+}
+
+/* Services */
+#services{
+    padding: 5rem 0;
+}
+
+#services h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#services .boxes{
+    display: flex;
+}
+
+#services .box{
+    background: #fff;
+    flex: 1;
+    padding: 2rem;
+    margin: 0 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    font-size: 1rem;
+}
+
+#services .box i{
+    color: #fff;
+    padding: 0.5rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 1rem;
+    margin-bottom: 1.4rem;
+}
